@@ -140,10 +140,10 @@ USE_TZ = True
 
 # MEDIA_ROOT is for the user-uploaded content
 
-STATIC_URL = '/static/'
+STATIC_URL = '/opt/render/project/src/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 
-MEDIA_URL = '/media/'
+MEDIA_URL = '/opt/render/project/src/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 
