@@ -165,9 +165,7 @@ CORS_ALLOW_METHODS = [
     "PUT",
 ]
 CORS_ALLOW_HEADERS = [
-    ...
     "Access-Control-Allow-Origin",
-    ...
 ]
 # CSRF_TRUSTED_ORIGINS = [
 #     "https://ayushkrportfolio.onrender.com",
