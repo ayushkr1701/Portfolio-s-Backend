@@ -20,7 +20,7 @@ export DJANGO_SUPERUSER_PASSWORD
 
 
 
-python manage.py createsuperuser --username $DJANGO_SUPERUSER_USERNAME 
+python manage.py createsuperuser --no-input
 
 # Start the Django development server
 # gunicorn config.wsgi
