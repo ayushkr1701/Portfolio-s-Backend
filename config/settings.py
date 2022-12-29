@@ -95,7 +95,7 @@ WSGI_APPLICATION = 'config.wsgi.application'
 #         'PORT': 5432,
 #     }
 # }
-DATABASES['default'] = dj_database_url.config(default=os.environ['DATABASE_URL'])
+DATABASES = dj_database_url.config(default=os.environ['DATABASE_URL'])
 
 
 
