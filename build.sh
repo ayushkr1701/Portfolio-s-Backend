@@ -8,9 +8,9 @@ python manage.py collectstatic --noinput
 
 # Run Django's migrate command to apply any outstanding database migrations
 python manage.py migrate
-export DJANGO_SUPERUSER_EMAIL= ayushkr1701@gmail.com
-export DJANGO_SUPERUSER_USERNAME= ayushkr1701
-export DJANGO_SUPERUSER_PASSWORD= Abhay@123
+$export DJANGO_SUPERUSER_EMAIL= ayushkr1701@gmail.com
+$export DJANGO_SUPERUSER_USERNAME= ayushkr1701
+$export DJANGO_SUPERUSER_PASSWORD= Abhay@123
 
 
 
