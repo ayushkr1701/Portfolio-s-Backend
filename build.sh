@@ -20,7 +20,7 @@ python manage.py migrate
 
 
 
-python manage.py createsuperuser --no-input
+# python manage.py createsuperuser --no-input
 
 # Start the Django development server
 # gunicorn config.wsgi
