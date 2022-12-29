@@ -152,7 +152,9 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# CORS_ALLOWED_ORIGINS = ['*']
-CORS_ALLOW_ALL_ORIGINS: True
+CORS_ALLOWED_ORIGINS = [
+  'http://localhost:3000', 'https://ayush-portfolio-backend.onrender.com','https://ayushkrportfolio.onrender.com'
+]
+
 
 FILE_UPLOAD_PERMISSIONS=0o640
