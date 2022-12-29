@@ -164,7 +164,7 @@ CORS_ALLOW_METHODS = [
     "POST",
     "PUT",
 ]
-CORS_ALLOW_HEADERS = [
+CORS_EXPOSE_HEADERS = [
     "Access-Control-Allow-Origin",
 ]
 # CSRF_TRUSTED_ORIGINS = [
