@@ -10,5 +10,5 @@ python manage.py collectstatic --noinput
 python manage.py migrate
 
 # Start the Django development server
-gunicorn config.wsgi
+# gunicorn config.wsgi
 
