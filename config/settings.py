@@ -21,6 +21,7 @@ ALLOWED_HOSTS = ['*']
 # Application definition
 
 INSTALLED_APPS = [
+  'corsheaders',
   'whitenoise.runserver_nostatic',
   'django.contrib.admin',
   'django.contrib.auth',
@@ -31,7 +32,7 @@ INSTALLED_APPS = [
   
   # 3rd party
   'rest_framework',
-  'corsheaders',
+  
 
   # Local
   'about',
