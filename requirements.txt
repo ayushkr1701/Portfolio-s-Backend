@@ -10,6 +10,7 @@ commonmark==0.9.1
 distlib==0.3.6
 dj-database-url==1.2.0
 Django==4.0.5
+django-cloudinary-storage==0.3.0
 django-cors-headers==3.13.0
 djangorestframework==3.13.1
 filelock==3.9.0
