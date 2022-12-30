@@ -28,7 +28,9 @@ INSTALLED_APPS = [
   'django.contrib.contenttypes',
   'django.contrib.sessions',
   'django.contrib.messages',
+  'cloudinary_storage'
   'django.contrib.staticfiles',
+  'cloudinary',
   
   # 3rd party
   'rest_framework',
@@ -135,17 +137,28 @@ USE_I18N = True
 
 USE_TZ = True
 
+CLOUDINARY_STORAGE = {
+    'CLOUD_NAME': 'dtjivws2c',
+    'API_KEY': '897949739888447',
+    'API_SECRET': '3fFPMLX_uRSUXR2noV-SmQXFP-s'
+}
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
 
 # MEDIA_ROOT is for the user-uploaded content
 
+# STATIC_URL = '/static/'
+# STATIC_ROOT = '/opt/render/project/src/static/'
 STATIC_URL = '/static/'
-STATIC_ROOT = '/opt/render/project/src/static/'
-
-MEDIA_URL = '/media/'
-MEDIA_ROOT = '/opt/render/project/src/media/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
+# MEDIA_URL = '/media/'
+# MEDIA_ROOT = '/opt/render/project/src/media/'
+MEDIA_URL = '/media/'  # or any prefix you choose
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.MediaCloudinaryStorage'
 
 
 # Default primary key field type
