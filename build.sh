@@ -9,18 +9,18 @@ python manage.py collectstatic --noinput
 # Run Django's migrate command to apply any outstanding database migrations
 python manage.py migrate
 
-# DJANGO_SUPERUSER_EMAIL=xxx@email.com
-# export DJANGO_SUPERUSER_EMAIL
+DJANGO_SUPERUSER_EMAIL=xxx@email.com
+export DJANGO_SUPERUSER_EMAIL
 
-# DJANGO_SUPERUSER_USERNAME=xxx
-# export DJANGO_SUPERUSER_USERNAME
+DJANGO_SUPERUSER_USERNAME=xxx
+export DJANGO_SUPERUSER_USERNAME
 
-# DJANGO_SUPERUSER_PASSWORD=xxx
-# export DJANGO_SUPERUSER_PASSWORD
+DJANGO_SUPERUSER_PASSWORD=xxx
+export DJANGO_SUPERUSER_PASSWORD
 
 
 
-# python manage.py createsuperuser --no-input
+python manage.py createsuperuser --no-input
 
 # Start the Django development server
 # gunicorn config.wsgi
